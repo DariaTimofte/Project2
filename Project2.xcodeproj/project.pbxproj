@@ -45,7 +45,6 @@
 		E730835321E2A70700A95365 /* Activity.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Activity.cpp; path = ../../../../Downloads/Project1/Activity.cpp; sourceTree = "<group>"; };
 		E730835521E2A71B00A95365 /* ActivityRepository.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = ActivityRepository.cpp; path = ../../../../Downloads/Project1/ActivityRepository.cpp; sourceTree = "<group>"; };
 		E730835921E2A73A00A95365 /* ConsoleApplication2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = ConsoleApplication2.h; path = ../../../../Downloads/Project1/ConsoleApplication2.h; sourceTree = "<group>"; };
-		E730835C21E2A75100A95365 /* pch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = pch.h; path = ../../../../Downloads/Project1/pch.h; sourceTree = "<group>"; };
 		E730835D21E2A75A00A95365 /* Person.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Person.cpp; path = ../../../../Downloads/Project1/Person.cpp; sourceTree = "<group>"; };
 		E730835F21E2A76100A95365 /* Person.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = Person.h; path = ../../../../Downloads/Project1/Person.h; sourceTree = "<group>"; };
 		E730836021E2A76900A95365 /* PersonRepository.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = PersonRepository.cpp; path = ../../../../Downloads/Project1/PersonRepository.cpp; sourceTree = "<group>"; };
@@ -66,6 +65,8 @@
 		E730837B21E2A7FF00A95365 /* TeacherRole.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TeacherRole.cpp; path = ../../../../Downloads/Project1/TeacherRole.cpp; sourceTree = "<group>"; };
 		E730837D21E2A80600A95365 /* TeacherRole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TeacherRole.h; path = ../../../../Downloads/Project1/TeacherRole.h; sourceTree = "<group>"; };
 		E730837E21E2A8A800A95365 /* PersonRepository.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PersonRepository.h; sourceTree = "<group>"; };
+		E730837F21E2ADBF00A95365 /* AdministrativeRole.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AdministrativeRole.h; sourceTree = "<group>"; };
+		E730838021E2AEB300A95365 /* ClassBook.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ClassBook.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,11 +119,12 @@
 				E730836A21E2A7A400A95365 /* Role.h */,
 				E730836521E2A78300A95365 /* Repository.h */,
 				E730835F21E2A76100A95365 /* Person.h */,
-				E730835C21E2A75100A95365 /* pch.h */,
 				E730835921E2A73A00A95365 /* ConsoleApplication2.h */,
 				E730835021E2A6E700A95365 /* Course.h */,
 				E730834E21E2A6BA00A95365 /* ActivityRepository.h */,
 				E730834D21E2A6A900A95365 /* Activity.h */,
+				E730837F21E2ADBF00A95365 /* AdministrativeRole.h */,
+				E730838021E2AEB300A95365 /* ClassBook.h */,
 			);
 			path = "Header files";
 			sourceTree = "<group>";

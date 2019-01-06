@@ -10,8 +10,8 @@
 #define AdministrativeRole_h
 
 #include <iostream>
-#include "Role.hpp"
-#include "Room.hpp"
+#include "Role.h"
+#include "Room.h"
 #include <vector>
 
 class AdministrativeRole : public Role {

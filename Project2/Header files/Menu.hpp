@@ -19,7 +19,7 @@ public:
         EXIT
     };
     
-    //check inout
+    //check input
     bool checkInput(std::string);
     
     //menu

@@ -9,6 +9,7 @@
 #ifndef Mark_h
 #define Mark_h
 
+#include<iostream>
 #include "Discipline.hpp"
 
 class Mark {

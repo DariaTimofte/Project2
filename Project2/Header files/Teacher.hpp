@@ -1,8 +1,7 @@
 #ifndef Teacher_h
 #define Teacher_h
 
-#include<string>
-
+#include<iostream>
 class Teacher
 {
 private:

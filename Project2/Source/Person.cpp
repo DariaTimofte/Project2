@@ -173,5 +173,3 @@ bool Person::isTeacher() {
     }
     return false;
 }
-
-

@@ -6,8 +6,8 @@
 //  Copyright © 2019 Daria Timofte. All rights reserved.
 //
 
-#include "AdministrativeRole.h"
-#include "Role.h"
+#include "AdministrativeRole.hpp"
+#include "Role.hpp"
 
 AdministrativeRole::AdministrativeRole()
 :Role(Role::ADMINISTRATIVE_ROLE)
@@ -28,7 +28,7 @@ AdministrativeRole::AdministrativeRole(Room* room)
 Room* AdministrativeRole::getRoom(std::string name) {
     std::vector<Room*>::iterator it;
     for (it = mRoomsAdministered.begin(); it != mRoomsAdministered.end(); it++) {
-        if ((*it)->getName() == name)
+        if ((*it)->get_Name() == name)
             return *it;
     }
     throw std::runtime_error("Room not found!");
@@ -46,7 +46,7 @@ void AdministrativeRole::removeRoom(std::string name) {
     std::vector<Room*>::iterator it;
     bool valide = false;
     for (it = mRoomsAdministered.begin(); it != mRoomsAdministered.end(); it++) {
-        if ((*it)->getName() == name) {
+        if ((*it)->get_Name() == name) {
             mRoomsAdministered.erase(it);
             valide = true;
             break;

@@ -6,69 +6,39 @@
 //  Copyright © 2019 Daria Timofte. All rights reserved.
 //
 
-#include "Classbook.hpp"
+#include "ClassBook.hpp"
 #include "StudentRole.hpp"
 
-Classbook::Classbook()
-{
-}
-
-
-Classbook::~Classbook()
-{
-}
-
-Classbook::Classbook(int studyGroup, std::string year) {
+ClassBook::ClassBook(int studyGroup, std::string year) {
     this->mStudyGroup = studyGroup;
     this->mYear = year;
 }
 
-void Classbook::set_Year(std::string Year)
-{
-    mYear = Year;
-}
-
-std::string Classbook::get_Year()
-{
-    return mYear;
-}
-
-void Classbook::set_StudyGroup(int StudyGroup)
-{
-    mStudyGroup = StudyGroup;
-}
-
-int Classbook::get_StudyGroup()
-{
-    return mStudyGroup;
-}
-
 std::vector<Person*>::iterator it;
 
-void Classbook::addStudent(Person * person) {
+void ClassBook::addStudent(Person * person) {
     StudentRole* p = dynamic_cast<StudentRole*>(person->displayRole(1));
-    for (it = mClassbook.begin(); it != mClassbook.end(); it++) {
-        if ((*it)->get_CNP() == person->get_CNP()) {
+    for (it = mClassBook.begin(); it != mClassBook.end(); it++) {
+        if ((*it)->getCNP() == person->getCNP()) {
             throw std::runtime_error("Person already exists!");
         }
     }
-    if (p->get_StudyGroup() != mStudyGroup) {
+    if (p->getStudyGroup() != mStudyGroup) {
         throw std::runtime_error("Person not from this group!");
     }
     try {
         person->getRole(1);
-    }
-    catch (std::runtime_error const e) {
+    } catch (std::runtime_error const e) {
         throw std::runtime_error("Not a student");
     }
-    mClassbook.push_back(person);
+    mClassBook.push_back(person);
 }
 
-void Classbook::removeByCNP(std::string CNP) {
+void ClassBook::removeByCNP(int CNP) {
     bool valide = false;
-    for (it = mClassbook.begin(); it != mClassbook.end(); it++) {
-        if ((*it)->get_CNP() == CNP) {
-            mClassbook.erase(it);
+    for (it = mClassBook.begin(); it != mClassBook.end(); it++) {
+        if ((*it)->getCNP() == CNP) {
+            mClassBook.erase(it);
             valide = true;
             break;
         }
@@ -78,11 +48,11 @@ void Classbook::removeByCNP(std::string CNP) {
     }
 }
 
-void Classbook::removeByEmail(std::string email) {
+void ClassBook::removeByEmail(std::string email) {
     bool valide = false;
-    for (it = mClassbook.begin(); it != mClassbook.end(); it++) {
-        if ((*it)->get_Email() == email) {
-            mClassbook.erase(it);
+    for (it = mClassBook.begin(); it != mClassBook.end(); it++) {
+        if ((*it)->getEmail() == email) {
+            mClassBook.erase(it);
             valide = true;
             break;
         }
@@ -92,11 +62,11 @@ void Classbook::removeByEmail(std::string email) {
     }
 }
 
-void Classbook::removeByFullName(std::string firstName, std::string lastName) {
+void ClassBook::removeByFullName(std::string firstName, std::string lastName) {
     bool valide = false;
-    for (it = mClassbook.begin(); it != mClassbook.end(); it++) {
-        if ((*it)->get_FirstName() == firstName && (*it)->get_LastName() == lastName) {
-            mClassbook.erase(it);
+    for (it = mClassBook.begin(); it != mClassBook.end(); it++) {
+        if ((*it)->getFirstName() == firstName && (*it)->getLastName() == lastName) {
+            mClassBook.erase(it);
             valide = true;
             break;
         }
@@ -106,59 +76,59 @@ void Classbook::removeByFullName(std::string firstName, std::string lastName) {
     }
 }
 
-Person* Classbook::searchByLastName(std::string lastName) {
-    for (it = mClassbook.begin(); it != mClassbook.end(); it++) {
-        if ((*it)->get_LastName() == lastName)
+Person* ClassBook::searchByLastName(std::string lastName) {
+    for (it = mClassBook.begin(); it != mClassBook.end() ; it++) {
+        if ((*it)->getLastName() == lastName)
             return *it;
     }
     throw std::runtime_error("Person could not be found!");
 }
 
-Person* Classbook::searchByFirstName(std::string firstName) {
-    for (it = mClassbook.begin(); it != mClassbook.end(); it++) {
-        if ((*it)->get_FirstName() == firstName)
+Person* ClassBook::searchByFirstName(std::string firstName) {
+    for (it = mClassBook.begin(); it != mClassBook.end(); it++) {
+        if ((*it)->getFirstName() == firstName)
             return *it;
         
     }
     throw std::runtime_error("Person could not be found!");
 }
 
-Person* Classbook::searchByFullName(std::string firstName, std::string lastName) {
-    for (it = mClassbook.begin(); it != mClassbook.end(); it++) {
-        if ((*it)->get_LastName() == lastName && (*it)->get_FirstName() == firstName)
+Person* ClassBook::searchByFullName(std::string firstName, std::string lastName) {
+    for (it = mClassBook.begin(); it != mClassBook.end(); it++) {
+        if ((*it)->getLastName() == lastName && (*it)->getFirstName() == firstName)
             return *it;
     }
     throw std::runtime_error("Person could not be found!");
 }
 
-Person* Classbook::searchByCNP(std::string CNP) {
-    for (it = mClassbook.begin(); it != mClassbook.end(); it++) {
-        if ((*it)->get_CNP() == CNP)
+Person* ClassBook::searchByCNP(int CNP) {
+    for (it = mClassBook.begin(); it != mClassBook.end(); it++) {
+        if((*it)->getCNP() == CNP)
             return *it;
     }
     throw std::runtime_error("Person could not be found!");
 }
 
-Person* Classbook::searchByEmail(std::string email) {
-    for (it = mClassbook.begin(); it != mClassbook.end(); it++) {
-        if ((*it)->get_Email() == email)
+Person* ClassBook::searchByEmail(std::string email) {
+    for (it = mClassBook.begin(); it != mClassBook.end(); it++) {
+        if((*it)->getEmail() == email)
             return *it;
     }
     throw std::runtime_error("Person could not be found!");
 }
 
-std::vector<Person*> Classbook::getClassBook() {
+std::vector<Person*> ClassBook::getClassBook() {
     std::vector<Person*> students;
-    for (it = mClassbook.begin(); it != mClassbook.end(); it++) {
+    for (it = mClassBook.begin(); it != mClassBook.end(); it++) {
         students.push_back(*it);
     }
     return students;
 }
 
-void Classbook::addMark(float mark, Discipline* discipline, std::string firstName, std::string lastName) {
+void ClassBook::addMark(float mark, Discipline* discipline, std::string firstName, std::string lastName) {
     StudentRole *student = NULL;
-    for (it = mClassbook.begin(); it != mClassbook.end(); it++) {
-        if ((*it)->get_LastName() == lastName && (*it)->get_FirstName() == firstName) {
+    for(it = mClassBook.begin(); it != mClassBook.end(); it++) {
+        if ((*it)->getLastName() == lastName && (*it)->getFirstName() == firstName) {
             student = dynamic_cast<StudentRole*>((*it)->displayRole(1));
             break;
         }
@@ -166,10 +136,10 @@ void Classbook::addMark(float mark, Discipline* discipline, std::string firstNam
     student->addMark(mark, discipline);
 }
 
-void Classbook::removeMark(std::string discipline, std::string firstName, std::string lastName) {
+void ClassBook::removeMark(std::string discipline, std::string firstName, std::string lastName) {
     StudentRole *student = NULL;
-    for (it = mClassbook.begin(); it != mClassbook.end(); it++) {
-        if ((*it)->get_LastName() == lastName && (*it)->get_FirstName() == firstName) {
+    for(it = mClassBook.begin(); it != mClassBook.end(); it++) {
+        if ((*it)->getLastName() == lastName && (*it)->getFirstName() == firstName) {
             student = dynamic_cast<StudentRole*>((*it)->displayRole(1));
             break;
         }
@@ -177,10 +147,10 @@ void Classbook::removeMark(std::string discipline, std::string firstName, std::s
     student->removeMark(discipline);
 }
 
-void Classbook::updateMark(float mark, std::string discipline, std::string firstName, std::string lastName) {
+void ClassBook::updateMark(float mark, std::string discipline, std::string firstName, std::string lastName) {
     StudentRole *student = NULL;
-    for (it = mClassbook.begin(); it != mClassbook.end(); it++) {
-        if ((*it)->get_LastName() == lastName && (*it)->get_FirstName() == firstName) {
+    for(it = mClassBook.begin(); it != mClassBook.end(); it++) {
+        if ((*it)->getLastName() == lastName && (*it)->getFirstName() == firstName) {
             student = dynamic_cast<StudentRole*>((*it)->displayRole(1));
             break;
         }
@@ -188,6 +158,14 @@ void Classbook::updateMark(float mark, std::string discipline, std::string first
     student->updateMark(mark, discipline);
 }
 
-long Classbook::getSize() {
-    return mClassbook.size();
+long ClassBook::getSize() {
+    return mClassBook.size();
+}
+
+int ClassBook::getStudyGroup() {
+    return this->mStudyGroup;
+}
+
+std::string ClassBook::getYear() {
+    return this->mYear;
 }

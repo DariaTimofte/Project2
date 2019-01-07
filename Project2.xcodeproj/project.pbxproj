@@ -17,15 +17,14 @@
 		E730836C21E2A7AA00A95365 /* Room.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E730836B21E2A7AA00A95365 /* Room.cpp */; };
 		E730836F21E2A7BA00A95365 /* RoomRepository.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E730836E21E2A7BA00A95365 /* RoomRepository.cpp */; };
 		E730837221E2A7C700A95365 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E730837121E2A7C700A95365 /* Student.cpp */; };
-		E730837521E2A7D300A95365 /* StudentRole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E730837421E2A7D300A95365 /* StudentRole.cpp */; };
 		E730837821E2A7E300A95365 /* Teacher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E730837721E2A7E300A95365 /* Teacher.cpp */; };
 		E730837C21E2A7FF00A95365 /* TeacherRole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E730837B21E2A7FF00A95365 /* TeacherRole.cpp */; };
 		E730838221E2C71D00A95365 /* AdministrativeRole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E730838121E2C71D00A95365 /* AdministrativeRole.cpp */; };
 		E730838621E2C90F00A95365 /* Mark.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E730838521E2C90F00A95365 /* Mark.cpp */; };
 		E730838821E2C98C00A95365 /* Discipline.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E730838721E2C98C00A95365 /* Discipline.cpp */; };
-		E730838A21E334A300A95365 /* ClassBook.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E730838921E334A300A95365 /* ClassBook.cpp */; };
 		E730838F21E3375500A95365 /* GuestRole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E730838E21E3375500A95365 /* GuestRole.cpp */; };
 		E730839121E3390E00A95365 /* Person.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E730839021E3390E00A95365 /* Person.cpp */; };
+		E730839521E3A4A300A95365 /* StudentRole.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E730839421E3A4A300A95365 /* StudentRole.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -60,8 +59,6 @@
 		E730837021E2A7BF00A95365 /* RoomRepository.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = RoomRepository.hpp; path = ../../../../Downloads/Project1/RoomRepository.hpp; sourceTree = "<group>"; };
 		E730837121E2A7C700A95365 /* Student.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Student.cpp; path = ../../../../Downloads/Project1/Student.cpp; sourceTree = "<group>"; };
 		E730837321E2A7CD00A95365 /* Student.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Student.hpp; path = ../../../../Downloads/Project1/Student.hpp; sourceTree = "<group>"; };
-		E730837421E2A7D300A95365 /* StudentRole.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = StudentRole.cpp; path = ../../../../Downloads/Project1/StudentRole.cpp; sourceTree = "<group>"; };
-		E730837621E2A7DC00A95365 /* StudentRole.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = StudentRole.hpp; path = ../../../../Downloads/Project1/StudentRole.hpp; sourceTree = "<group>"; };
 		E730837721E2A7E300A95365 /* Teacher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Teacher.cpp; path = ../../../../Downloads/Project1/Teacher.cpp; sourceTree = "<group>"; };
 		E730837A21E2A7EC00A95365 /* Teacher.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Teacher.hpp; sourceTree = "<group>"; };
 		E730837B21E2A7FF00A95365 /* TeacherRole.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TeacherRole.cpp; path = ../../../../Downloads/Project1/TeacherRole.cpp; sourceTree = "<group>"; };
@@ -74,12 +71,13 @@
 		E730838421E2C8A500A95365 /* Discipline.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Discipline.hpp; sourceTree = "<group>"; };
 		E730838521E2C90F00A95365 /* Mark.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Mark.cpp; sourceTree = "<group>"; };
 		E730838721E2C98C00A95365 /* Discipline.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Discipline.cpp; sourceTree = "<group>"; };
-		E730838921E334A300A95365 /* ClassBook.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = ClassBook.cpp; sourceTree = "<group>"; };
 		E730838D21E3371F00A95365 /* GuestRole.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = GuestRole.hpp; sourceTree = "<group>"; };
 		E730838E21E3375500A95365 /* GuestRole.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = GuestRole.cpp; sourceTree = "<group>"; };
 		E730839021E3390E00A95365 /* Person.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Person.cpp; sourceTree = "<group>"; };
 		E730839221E33A0200A95365 /* Room.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Room.hpp; sourceTree = "<group>"; };
 		E730839321E34B5F00A95365 /* Role.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Role.hpp; sourceTree = "<group>"; };
+		E730839421E3A4A300A95365 /* StudentRole.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = StudentRole.cpp; sourceTree = "<group>"; };
+		E730839621E3A4D900A95365 /* StudentRole.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = StudentRole.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,7 +124,6 @@
 				E730837D21E2A80600A95365 /* TeacherRole.hpp */,
 				E730837E21E2A8A800A95365 /* PersonRepository.hpp */,
 				E730837A21E2A7EC00A95365 /* Teacher.hpp */,
-				E730837621E2A7DC00A95365 /* StudentRole.hpp */,
 				E730837321E2A7CD00A95365 /* Student.hpp */,
 				E730837021E2A7BF00A95365 /* RoomRepository.hpp */,
 				E730836521E2A78300A95365 /* Repository.hpp */,
@@ -141,6 +138,7 @@
 				E730838421E2C8A500A95365 /* Discipline.hpp */,
 				E730838D21E3371F00A95365 /* GuestRole.hpp */,
 				E730839221E33A0200A95365 /* Room.hpp */,
+				E730839621E3A4D900A95365 /* StudentRole.hpp */,
 			);
 			path = "Header files";
 			sourceTree = "<group>";
@@ -150,7 +148,6 @@
 			children = (
 				E730837B21E2A7FF00A95365 /* TeacherRole.cpp */,
 				E730837721E2A7E300A95365 /* Teacher.cpp */,
-				E730837421E2A7D300A95365 /* StudentRole.cpp */,
 				E730837121E2A7C700A95365 /* Student.cpp */,
 				E730836E21E2A7BA00A95365 /* RoomRepository.cpp */,
 				E730836B21E2A7AA00A95365 /* Room.cpp */,
@@ -163,9 +160,9 @@
 				E730838121E2C71D00A95365 /* AdministrativeRole.cpp */,
 				E730838521E2C90F00A95365 /* Mark.cpp */,
 				E730838721E2C98C00A95365 /* Discipline.cpp */,
-				E730838921E334A300A95365 /* ClassBook.cpp */,
 				E730838E21E3375500A95365 /* GuestRole.cpp */,
 				E730839021E3390E00A95365 /* Person.cpp */,
+				E730839421E3A4A300A95365 /* StudentRole.cpp */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -235,16 +232,15 @@
 				E730835221E2A6FC00A95365 /* Course.cpp in Sources */,
 				E730837821E2A7E300A95365 /* Teacher.cpp in Sources */,
 				E730836C21E2A7AA00A95365 /* Room.cpp in Sources */,
+				E730839521E3A4A300A95365 /* StudentRole.cpp in Sources */,
 				E730836121E2A76900A95365 /* PersonRepository.cpp in Sources */,
 				E730839121E3390E00A95365 /* Person.cpp in Sources */,
 				E730837221E2A7C700A95365 /* Student.cpp in Sources */,
-				E730837521E2A7D300A95365 /* StudentRole.cpp in Sources */,
 				E730836921E2A79800A95365 /* Role.cpp in Sources */,
 				E730834521E2A54000A95365 /* main.cpp in Sources */,
 				E730838221E2C71D00A95365 /* AdministrativeRole.cpp in Sources */,
 				E730837C21E2A7FF00A95365 /* TeacherRole.cpp in Sources */,
 				E730836421E2A77E00A95365 /* Repository.cpp in Sources */,
-				E730838A21E334A300A95365 /* ClassBook.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

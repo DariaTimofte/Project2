@@ -1,5 +1,8 @@
-#include "Repository.h"
-#include "Person.h"
+#ifndef PersonRepository_h
+#define PersonRepository_h
+
+#include "Repository.hpp"
+#include "Person.hpp"
 
 class PersonRepository: public Repository<Person> {
 public:
@@ -11,4 +14,7 @@ public:
     std::vector<Person*> searchByRole(int role);
     long size();
 };
+
+#endif /*  PersonRepository_h */
+
 

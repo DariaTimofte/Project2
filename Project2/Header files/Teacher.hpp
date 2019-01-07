@@ -1,3 +1,6 @@
+#ifndef Teacher_h
+#define Teacher_h
+
 #include<string>
 
 class Teacher
@@ -9,3 +12,5 @@ private:
 	std::string CNP;
 	std::string birthDate;
 };
+
+#endif /*  Teacher_h */

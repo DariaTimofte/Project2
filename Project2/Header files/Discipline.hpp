@@ -9,7 +9,7 @@
 #ifndef Discipline_h
 #define Discipline_h
 
-#include "Activity.h"
+#include "Activity.hpp"
 
 class Discipline {
 public:

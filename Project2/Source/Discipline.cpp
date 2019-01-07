@@ -6,8 +6,8 @@
 //  Copyright © 2019 Daria Timofte. All rights reserved.
 //
 
-#include "Discipline.h"
-#include "StudentRole.h"
+#include "Discipline.hpp"
+#include "StudentRole.hpp"
 
 Discipline::Discipline(std::string name, Activity* activity) {
     this->mName = name;

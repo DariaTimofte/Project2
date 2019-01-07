@@ -9,8 +9,8 @@
 #ifndef ClassBook_h
 #define ClassBook_h
 
-#include "Person.h"
-#include "
+#include "Person.hpp"
+#include "Discipline.hpp"
 
 class ClassBook {
 public:

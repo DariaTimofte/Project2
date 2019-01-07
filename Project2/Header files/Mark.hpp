@@ -9,7 +9,7 @@
 #ifndef Mark_h
 #define Mark_h
 
-#include "Discipline.h"
+#include "Discipline.hpp"
 
 class Mark {
 public:

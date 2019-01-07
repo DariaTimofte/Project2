@@ -6,7 +6,7 @@
 //  Copyright © 2019 Daria Timofte. All rights reserved.
 //
 
-#include "Mark.h"
+#include "Mark.hpp"
 
 Mark::Mark(float mark, Discipline* discipline) {
     this->mMark = mark;

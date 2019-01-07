@@ -1,13 +1,10 @@
-#include "StudentRole.h"
-#include<iostream>
+#include "Role.hpp"
 
-Role::Role()
+Role::Role(RoleType type)
 {
-	this->mType = mType;
-	this->mRoles = mRoles;
+    this->mType = type;
 }
-
-Role::Role(RoleType type):mType(type)
+Role::RoleType Role::getRole()
 {
-
+    return mType;
 }

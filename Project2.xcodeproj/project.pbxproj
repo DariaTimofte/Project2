@@ -26,8 +26,8 @@
 		E730839B21E3B5C300A95365 /* ClassBookRepository.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E730839921E3B5C300A95365 /* ClassBookRepository.cpp */; };
 		E730839E21E3B61000A95365 /* DisciplineRepository.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E730839C21E3B61000A95365 /* DisciplineRepository.cpp */; };
 		E73083A321E3CFBE00A95365 /* Teacher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E73083A121E3CFBE00A95365 /* Teacher.cpp */; };
-		E73083A621E3D12400A95365 /* Course.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E73083A421E3D12300A95365 /* Course.cpp */; };
 		E73083A921E3D27F00A95365 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E73083A721E3D27F00A95365 /* Student.cpp */; };
+		E73083B021E3EB9900A95365 /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E73083AE21E3EB9900A95365 /* Menu.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -80,11 +80,12 @@
 		E730839C21E3B61000A95365 /* DisciplineRepository.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = DisciplineRepository.cpp; sourceTree = "<group>"; };
 		E730839D21E3B61000A95365 /* DisciplineRepository.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = DisciplineRepository.hpp; path = "/Users/dariatimofte/Desktop/Project2/Project2/Header files/DisciplineRepository.hpp"; sourceTree = "<absolute>"; };
 		E73083A121E3CFBE00A95365 /* Teacher.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Teacher.cpp; sourceTree = "<group>"; };
-		E73083A221E3CFBE00A95365 /* Teacher.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Teacher.hpp; path = ../Source/Teacher.hpp; sourceTree = "<group>"; };
-		E73083A421E3D12300A95365 /* Course.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Course.cpp; sourceTree = "<group>"; };
-		E73083A521E3D12400A95365 /* Course.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Course.hpp; path = ../Source/Course.hpp; sourceTree = "<group>"; };
 		E73083A721E3D27F00A95365 /* Student.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
-		E73083A821E3D27F00A95365 /* Student.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Student.hpp; path = ../Source/Student.hpp; sourceTree = "<group>"; };
+		E73083AB21E3E1DE00A95365 /* Course.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Course.hpp; path = ../../../Course.hpp; sourceTree = "<group>"; };
+		E73083AC21E3E1F600A95365 /* Student.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Student.hpp; path = ../../../Student.hpp; sourceTree = "<group>"; };
+		E73083AD21E3E20300A95365 /* Teacher.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; name = Teacher.hpp; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/.Trash/Teacher.hpp"; sourceTree = "<group>"; };
+		E73083AE21E3EB9900A95365 /* Menu.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = Menu.cpp; sourceTree = "<group>"; };
+		E73083AF21E3EB9900A95365 /* Menu.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = Menu.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,16 +128,17 @@
 		E730834B21E2A64F00A95365 /* Header files */ = {
 			isa = PBXGroup;
 			children = (
-				E73083A821E3D27F00A95365 /* Student.hpp */,
-				E73083A521E3D12400A95365 /* Course.hpp */,
+				E73083AF21E3EB9900A95365 /* Menu.hpp */,
 				E730839D21E3B61000A95365 /* DisciplineRepository.hpp */,
-				E73083A221E3CFBE00A95365 /* Teacher.hpp */,
 				E730839321E34B5F00A95365 /* Role.hpp */,
 				E730839A21E3B5C300A95365 /* ClassBookRepository.hpp */,
+				E73083AC21E3E1F600A95365 /* Student.hpp */,
 				E730837D21E2A80600A95365 /* TeacherRole.hpp */,
 				E730837E21E2A8A800A95365 /* PersonRepository.hpp */,
 				E730837021E2A7BF00A95365 /* RoomRepository.hpp */,
+				E73083AD21E3E20300A95365 /* Teacher.hpp */,
 				E730836521E2A78300A95365 /* Repository.hpp */,
+				E73083AB21E3E1DE00A95365 /* Course.hpp */,
 				E730835F21E2A76100A95365 /* Person.hpp */,
 				E730834E21E2A6BA00A95365 /* ActivityRepository.hpp */,
 				E730834D21E2A6A900A95365 /* Activity.hpp */,
@@ -172,8 +174,8 @@
 				E730839921E3B5C300A95365 /* ClassBookRepository.cpp */,
 				E730839C21E3B61000A95365 /* DisciplineRepository.cpp */,
 				E73083A121E3CFBE00A95365 /* Teacher.cpp */,
-				E73083A421E3D12300A95365 /* Course.cpp */,
 				E73083A721E3D27F00A95365 /* Student.cpp */,
+				E73083AE21E3EB9900A95365 /* Menu.cpp */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -246,13 +248,13 @@
 				E730836C21E2A7AA00A95365 /* Room.cpp in Sources */,
 				E730839521E3A4A300A95365 /* StudentRole.cpp in Sources */,
 				E730836121E2A76900A95365 /* PersonRepository.cpp in Sources */,
-				E73083A621E3D12400A95365 /* Course.cpp in Sources */,
 				E73083A321E3CFBE00A95365 /* Teacher.cpp in Sources */,
 				E730839121E3390E00A95365 /* Person.cpp in Sources */,
 				E730836921E2A79800A95365 /* Role.cpp in Sources */,
 				E730834521E2A54000A95365 /* main.cpp in Sources */,
 				E730838221E2C71D00A95365 /* AdministrativeRole.cpp in Sources */,
 				E73083A921E3D27F00A95365 /* Student.cpp in Sources */,
+				E73083B021E3EB9900A95365 /* Menu.cpp in Sources */,
 				E730837C21E2A7FF00A95365 /* TeacherRole.cpp in Sources */,
 				E730836421E2A77E00A95365 /* Repository.cpp in Sources */,
 			);

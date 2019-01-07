@@ -65,7 +65,7 @@ int main() {
      std::vector<Room*> rooms;
      std::vector<Activity*> activ;
      
-     rooms.push_back(new Room("Bedroom"));
+     rooms.push_back(new Room("Sala 321"));
      pers.push_back(new Person("Daria", "Timofte", 2804));
      activ.push_back(new Activity(rooms[0], pers[0], "Laborator POO"));
      pers[0]->addRole(new TeacherRole);
